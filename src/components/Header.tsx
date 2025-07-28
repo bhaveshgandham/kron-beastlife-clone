@@ -3,7 +3,7 @@ import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import { Menu, Search, ShoppingCart, User } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import kronLogo from '@/assets/kron-logo.png';
+// Using uploaded logo directly
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -21,9 +21,8 @@ const Header = () => {
       <div className="container mx-auto px-4">
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
-          <Link to="/" className="flex items-center space-x-2">
-            <img src={kronLogo} alt="Kron Nutrition" className="h-10 w-10" />
-            <span className="text-xl font-bold text-primary">Kron Nutrition</span>
+          <Link to="/" className="flex items-center space-x-3">
+            <img src="/lovable-uploads/4c5c61dd-5c27-4363-8bf2-421c3cf971b0.png" alt="Kron Nutrition" className="h-12 w-auto" />
           </Link>
 
           {/* Desktop Navigation */}
@@ -63,8 +62,7 @@ const Header = () => {
             <SheetContent side="right" className="w-[300px] sm:w-[400px]">
               <div className="flex flex-col space-y-4 mt-8">
                 <Link to="/" className="flex items-center space-x-2 mb-8">
-                  <img src={kronLogo} alt="Kron Nutrition" className="h-8 w-8" />
-                  <span className="text-lg font-bold text-primary">Kron Nutrition</span>
+                  <img src="/lovable-uploads/4c5c61dd-5c27-4363-8bf2-421c3cf971b0.png" alt="Kron Nutrition" className="h-10 w-auto" />
                 </Link>
                 {navItems.map((item) => (
                   <Link
